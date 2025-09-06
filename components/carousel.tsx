@@ -7,7 +7,7 @@ import Image from 'next/image';
 interface CarouselProps {
   products: Stripe.Product[];
 }
-export default function carousel({ products }: CarouselProps) {
+export default function Carousel({ products }: CarouselProps) {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   useEffect(() => {
     const interval = setInterval(() => {

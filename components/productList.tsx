@@ -6,7 +6,7 @@ import ProductCard from './productCard'
 interface props { 
     products :  Stripe.Product[]
 }
-export default function productList({products}:props) {
+export default function ProductList({products}:props) {
   const [searchTerm, setSearchTerm] = useState<string>('');
   const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())

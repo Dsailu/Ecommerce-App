@@ -9,7 +9,7 @@ import { useCartStore } from '@/store/cart-store';
 interface props {
     product: Stripe.Product
 }
-export default function productDetails({ product }: props) {
+export default function ProductDetails({ product }: props) {
     const {items, addItem, removeItem} = useCartStore();
     const price = product?.default_price as Stripe.Price;
     const cartItem = items.find((item)=> item.id === product.id)
