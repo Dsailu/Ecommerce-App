@@ -1,13 +1,13 @@
 "use client"
 
-import React from 'react'
+import React, { useState } from 'react'
 import Stripe from 'stripe'
 import ProductCard from './productCard'
 interface props { 
     products :  Stripe.Product[]
 }
 export default function productList({products}:props) {
-  const [searchTerm, setSearchTerm] = React.useState<string>('');
+  const [searchTerm, setSearchTerm] = useState<string>('');
   const filteredProducts = products.filter(product =>
     product.name.toLowerCase().includes(searchTerm.toLowerCase())
   );

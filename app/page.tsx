@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import { stripeClient } from "@/lib/stripe";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";

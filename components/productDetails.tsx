@@ -5,7 +5,7 @@ import Stripe from 'stripe'
 import Image from 'next/image'
 import { Button } from './ui/button';
 import { useCartStore } from '@/store/cart-store';
-import { on } from 'events';
+
 interface props {
     product: Stripe.Product
 }

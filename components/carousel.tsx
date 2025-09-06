@@ -1,6 +1,6 @@
 "use client"
 
-import React, { use, useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Stripe from 'stripe';
 import { Card, CardContent, CardTitle } from './ui/card';
 import Image from 'next/image';

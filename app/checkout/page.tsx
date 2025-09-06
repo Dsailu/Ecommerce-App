@@ -12,7 +12,7 @@ function Checkoutpage() {
     return (
       <div className="container mx-auto p-4">
         <h2 className="text-2xl font-bold mb-4">Your Cart is Empty</h2>
-        <p className="mb-4">Looks like you haven't added anything to your cart yet.</p>
+        <p className="mb-4">Looks like you have not added anything to your cart yet.</p>
       </div>
     )
   }
